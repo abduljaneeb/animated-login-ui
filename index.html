@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illuminate - Modern Login</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Animated login page with a lamp effect">
+</head>
+<body>
+    <div class="container">
+        <div class="glow-overlay" id="glow"></div>
+        <div class="left-section">
+            <div class="lamp-container" id="lampToggle">
+                <div class="wire"></div>
+                <div class="lamp-head-container">
+                    <div class="lamp-head"></div>
+                    <div class="lamp-bulb" id="bulb"></div>
+                    <div class="switch-cord"></div>
+                    <div class="light-ray" id="lightRay"></div>
+                </div>
+            </div>
+            <div class="instruction-text" id="instructionText">Pull the cord<br>to illuminate</div>
+        </div>
+        <div class="right-section">
+            <div class="login-wrapper" id="loginForm">
+                <form class="glass-form" onsubmit="event.preventDefault();">
+                    <div class="form-header">
+                        <h2>Welcome</h2>
+                        <p>Sign in to continue your journey.</p>
+                    </div>
+                    
+                    <div class="input-container">
+                        <div class="input-group">
+                            <input type="text" id="username" placeholder=" " required autocomplete="username">
+                            <label for="username">Username</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" id="password" placeholder=" " required autocomplete="current-password">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-signin">Sign In</button>
+                    
+                    <div class="extra-links">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Create Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
